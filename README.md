@@ -9,11 +9,28 @@
 
 ##What is an Array?
 
+So far, we've used variables to store information. For example, I could create a variable called `my_name` and set it equal to my name: `my_name = "Severus Snape"`. However, variables only allow us to store one piece of information at a time. 
+
+What if my boss, Headmaster Dumbledore, asks me to deliver the names of all of my students? I could create a bunch of variables like this: 
+
+```ruby
+student1 = "Harry Potter"
+student2 = "Ron Weasley"
+student3 = "Hermione Granger"
+student4 = "Draco Malfroy"
+
+etc...
+```
+
+Then, I could write a program that passes around these variables *one at a time*. This seems messy though. I could easily forget about a student, for example. Or need to create a new student and then have to hunt through my program for every place I ever passed around all of these individual variables. 
+
+If this were real life, Professor Snape would probably just write down all the students in list form and hand that list to Dumbledore. Well, in Ruby, we can do the same thing using an array.
+
 An array is just a list in your computer. It is a way for your program to store data in list form. Arrays can contain any data types in any combination––strings, ingegers, other arrays, hashes, etc. 
 
 Arrays consist of comman separated values, enclosed in brackets: 
 
-`["hi", 1, "I", 42.3, "am", true, "an", 3, "array"]`
+`students = ["Harry Potter", "Ron Weasley", "Hermione Granger", "Draco Malfroy"]`
 
 ## Creation
 
@@ -31,6 +48,8 @@ my_array = Array.new
 #  └── []
 ```
 
+**Remember, a class is like a template for creating objects in Ruby. There is an array class that every array you create inherits from, thus making all arrays capable of certain shared behaviors/responsive to certain methods. Don't worry about classes for now, we'll be learning much more about them later.*
+
 To make an array that isn't empty, you can separate each item, known as an element, by a `,` and wrap all the elements in brackets, `[]`.
 
 ```ruby
@@ -44,6 +63,7 @@ mixed = ["this", "array", 7, 20, "has", 45, "integers", "&", "strings", 309]
 #  └── ["this", "array", 7, 20, "has", 45, "integers", "&", "strings", 309]
 ```
 
+It is possible to create an array that contains disparate data types, but that is generally discouraged. 
 ## Manipulating Arrays
 
 If an array is a storage container for a list of data, we can imagine needing to adding items to and remove item from it. There are a number of ways to do both of these. 
@@ -64,6 +84,10 @@ puts famous_cats.inspect
 
 ```
 
+**The `inspect` method* returns a string containing a human-readable representation of an object. 
+
+We generally prefer the `<<` to the following method that acheives the same result:
+
 **The `.push` Method**
 
 Calling `.push` on an array, and giving the push method an argument of the element you want to add to the array, will add that element to the *end* of the array. 
@@ -73,7 +97,7 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 
 famous_cats.push("nala cat")
 
-famous_cats.inspect
+puts famous_cats.inspect
   => ["lil' bub", "grumpy cat", "Maru", "nala cat"]
 
 ```
@@ -88,7 +112,7 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 famous_cats.unshift("nala cat")
 
 puts famous_cats.inspect
-  => ["nala cat, "lil' bub", "grumpy cat", "Maru"]
+  => ["nala cat", "lil' bub", "grumpy cat", "Maru"]
 
 ```
 ### Removing Items from an Array
@@ -101,7 +125,7 @@ Calling `.pop` on an array will remove the last item from the end of the array.
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 famout_cats.pop
 
-famous_cats.inspect 
+puts famous_cats.inspect 
  => ["lil' bub", "grumpy cat", "Maru"]
 ```
 
@@ -137,7 +161,7 @@ famous_wizards.reverse
   => ["Gandalf", "Dumbledore"] 
 ```
 
-We can also ask an array if it contains a certain element with the `.include` method. 
+We can also ask an array if it contains a certain element with the `.include?` method. 
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
@@ -148,10 +172,6 @@ famous_cats.include?("Garfield")
 famous_cats.include?("Maru")
   => true
 ```
-
-***A Note on Iteration***
-
-One of the most common operations you'll be preforming on arrays is that of iteration. Iteration is the act of looping over each element of the array and doing something to it (i.e, go over each element of the array and capialize it, for example). We will be learning much more about iteration in an upcoming unit. 
 
 ## Retrieving Items from Array
 
@@ -181,7 +201,7 @@ famous_cats[20]
 
 ```
 
-**Finding an element's index**
+**Bonus: Finding an element's index**
 
 To discover the index number of an element within an array, we use the `.index` method. Calling `.index` on an array, and giving it an argument of the element whose index you want to learn, will return the index number. 
 
@@ -191,4 +211,6 @@ famous_cats =  ["Cheshire Cat", "Puss in Boots", "Garfield"]
 famous_cats.index("Puss in Boots")
 #  └── 1
 ```
+
+This is not an operation you will preform very often. Arrays are used to store data and usually you will use the index number of an item to access it, not the other way around. 
 
