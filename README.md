@@ -126,7 +126,7 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 famout_cats.pop
 
 puts famous_cats.inspect 
- => ["lil' bub", "grumpy cat", "Maru"]
+ => ["lil' bub", "grumpy cat"]
 ```
 
 *It is worth noting that the `.pop` method will return the element that you removed. 
