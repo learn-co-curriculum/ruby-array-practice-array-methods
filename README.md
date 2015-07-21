@@ -52,7 +52,7 @@ my_array = Array.new
 #  └── []
 ```
 
-**Note:** *Remember, a class is like a template for creating objects in Ruby. There is an array class that every array you create inherits from, thus making all arrays capable of certain shared behaviors/responsive to certain methods. Don't worry about classes for now, we'll be learning much more about them later.*
+**Advanced:** *A class is like a template for creating objects in Ruby. There is an array class that every array you create inherits from, thus making all arrays capable of certain shared behaviors/responsive to certain methods. Don't worry about understanding classes yet, we'll be learning much more about them later.*
 
 To make an array that isn't empty, you can separate each item, known as an element, by a `,` ("comma") and wrap all the elements inside `[``]` ("square brackets").
 
