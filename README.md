@@ -2,12 +2,13 @@
 
 ## Objectives
 
-1. Understand the purpose of arrays
-2. Learn to create and populate arrays
-3. Learn to manipulate arrays and start getting comfortable with the Ruby documentation on arrays
-4. Learn to retrieve data from arrays
+1. Understand the purpose of arrays.
+2. Create and populate an array.
+3. Manipulate an array.
+4. Reference the Ruby documentation on arrays.
+4. Retrieve data from an array.
 
-##What is an Array?
+## What is an Array?
 
 So far, we've used variables to store information. For example, I could create a variable called `my_name` and set it equal to my name: `my_name = "Severus Snape"`. However, variables only allow us to store one piece of information at a time. 
 
@@ -17,7 +18,7 @@ What if my boss, Headmaster Dumbledore, asks me to deliver the names of all of m
 student1 = "Harry Potter"
 student2 = "Ron Weasley"
 student3 = "Hermione Granger"
-student4 = "Draco Malfroy"
+student4 = "Draco Malfoy"
 
 etc...
 ```
@@ -26,31 +27,34 @@ Then, I could write a program that passes around these variables *one at a time*
 
 If this were real life, Professor Snape would probably just write down all the students in list form and hand that list to Dumbledore. Well, in Ruby, we can do the same thing using an array.
 
-An array is just a list in your computer. It is a way for your program to store data in list form. Arrays can contain any data types in any combination––strings, ingegers, other arrays, hashes, etc. 
+An array is like a list in but in code form. It is a way for your program to store pieces of data as a *collection*. Arrays can contain any data types in any combination––strings, integers, other arrays, hashes, etc. 
 
-Arrays consist of comman separated values, enclosed in brackets: 
+Arrays are declared by listing variable names or literals separated by commas (`,`) and wrapped in square brackets `[``]`. To save our four student from above into an array, we write that in our code like this:
 
-`students = ["Harry Potter", "Ron Weasley", "Hermione Granger", "Draco Malfroy"]`
+```ruby
+students = ["Harry Potter", "Ron Weasley", "Hermione Granger", "Draco Malfoy"]
+```
 
-## Creation
+## Creating an Array
 
 There are a few different ways to make a new array. You can use the literal constructor or the class constructor. 
 
-**The Literal Constructor:**
+##### The Literal Constructor
 
 ```ruby
 my_array = []
 ```
-**The Class Constructor:**
+
+##### The Class Constructor
 
 ```ruby
 my_array = Array.new
 #  └── []
 ```
 
-**Remember, a class is like a template for creating objects in Ruby. There is an array class that every array you create inherits from, thus making all arrays capable of certain shared behaviors/responsive to certain methods. Don't worry about classes for now, we'll be learning much more about them later.*
+**Note:** *Remember, a class is like a template for creating objects in Ruby. There is an array class that every array you create inherits from, thus making all arrays capable of certain shared behaviors/responsive to certain methods. Don't worry about classes for now, we'll be learning much more about them later.*
 
-To make an array that isn't empty, you can separate each item, known as an element, by a `,` and wrap all the elements in brackets, `[]`.
+To make an array that isn't empty, you can separate each item, known as an element, by a `,` ("comma") and wrap all the elements inside `[``]` ("square brackets").
 
 ```ruby
 puppies = ["bulldog", "terrier", "poodle"]
@@ -63,16 +67,17 @@ mixed = ["this", "array", 7, 20, "has", 45, "integers", "&", "strings", 309]
 #  └── ["this", "array", 7, 20, "has", 45, "integers", "&", "strings", 309]
 ```
 
-It is possible to create an array that contains disparate data types, but that is generally discouraged. 
+It is possible to create an array that contains disparate data types, but that is generally discouraged. It's best to keep your arrays populated with only one kind of element.
+
 ## Manipulating Arrays
 
-If an array is a storage container for a list of data, we can imagine needing to adding items to and remove item from it. There are a number of ways to do both of these. 
+If an array is a storage container for a list of data, then we can imaging adding and removing individual items from it. There are several ways to accomplish either. 
 
-###Adding Items to an Array
+### Adding Items to an Array
 
-**Double Shovel Method**
+#### Shovel Method
 
-The double shovel method, `<<`, allows you to shovel or add items to the *end* of an array. 
+The shovel method employs the "shovel" operator (`<<`) and allows you to add ("shovel") items onto the *end* of an array: 
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
@@ -84,13 +89,13 @@ puts famous_cats.inspect
 
 ```
 
-**The `inspect` method* returns a string containing a human-readable representation of an object. 
+**Note:** *The* `.inspect` *method returns a string containing a human-readable representation of an object. In this case, the list of the strings held in the array.*
 
-We generally prefer the `<<` to the following method that acheives the same result:
+The shovel method (`<<`) is the preferred syntax for adding elements to an array, however you might see other methods used in examples online:
 
-**The `.push` Method**
+#### The `.push` Method
 
-Calling `.push` on an array, and giving the push method an argument of the element you want to add to the array, will add that element to the *end* of the array. 
+Calling `.push` on an array with an argument of the element you wish to add to that array, will also add that element to the *end* of the array. It has the same effect as the shovel method explained above:
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
@@ -102,9 +107,9 @@ puts famous_cats.inspect
 
 ```
 
-**The `.unshift` Method**
+#### The `.unshift` Method
 
-To add an element to the *front* of an array, you can call `.unshift` on it and give the unshift method an argument of the element you want to add. 
+To add an element to the *front* of an array, you can call the `.unshift` method on it with an argument of the element you wish to add:
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
@@ -115,53 +120,68 @@ puts famous_cats.inspect
   => ["nala cat", "lil' bub", "grumpy cat", "Maru"]
 
 ```
-### Removing Items from an Array
+### Removing Items From an Array
 
-**The `.pop` Method**
+#### The `.pop` Method
 
-Calling `.pop` on an array will remove the last item from the end of the array. 
+Calling `.pop` on an array will remove the *last* item from the *end* of the array. The `.pop` method will also supply the removed element as its return:
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
-famout_cats.pop
+maru_cat = famous_cats.pop
 
 puts famous_cats.inspect 
  => ["lil' bub", "grumpy cat"]
+puts maru_cat
+ => Maru
 ```
 
-*It is worth noting that the `.pop` method will return the element that you removed. 
+#### The `.shift` Method
 
-**The `.shift` Method**
-
-Calling `.shift` on an array will remove the *first* item from the array. 
+Calling `.shift` on an array will remove the *first* item from the *front* of the array. The `.shift` method will also supply the removed element as a return:
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
-famout_cats.shift
+lil_bub = famout_cats.shift
 
-famous_cats.inspect
+puts famous_cats.inspect
   => ["grumpy cat", "Maru"]
+puts lil_bub
+  => lil' bub
 ```
 
-*It is worth noting that the shift method returns the element that you have removed. 
 
 ### Operating on Arrays
 
 There are a number of other methods available for manipulating arrays. You can learn more about them [here](http://ruby-doc.org/core-2.2.0/Array.html), but we'll look at just a few examples together. 
+
+#### The `.sort` Method
+
+This method rearranges the contents of the array by, well, sorting them. For strings, this means alphabetically, for numerical values, this means 
+
+**Advanced:** *The* `.sort` *method works by implicitly comparing elements with the "spaceship" operator* `<=>` *(because it looks like a flying saucer, swoosh!) and moving them accordingly.*
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 
 famout_cats.sort
   => ["grumpy cat", "lil' bub", "Maru"]
-  
-famous_wizards = ["Dumbledore", "Gandalf"]
-
-famous_wizards.reverse
-  => ["Gandalf", "Dumbledore"] 
 ```
 
-We can also ask an array if it contains a certain element with the `.include?` method. 
+#### The `.reverse` Method
+
+This method reverses an array.
+
+```ruby  
+famous_wizards = ["Dumbledore", "Gandalf", "Merlin"]
+
+famous_wizards.reverse
+  => ["Merlin", "Gandalf", "Dumbledore"] 
+```
+
+#### The `.include?()` Method
+
+This method will return a boolean of whether or not the array contains (or *includes*) the element submitted to it inside the parentheses:
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
@@ -175,14 +195,17 @@ famous_cats.include?("Maru")
 
 ## Retrieving Items from Array
 
-Just like how items in a numbered lists have a number, elements in an array have what's called an index. However, these indexes are always one number less than you might expect. Instead of starting our count at 1, an array's first index is referred to as 0. So, in the following array: 
+When you write out a list on a notepad, you typically write each item on its own line. Whether or not the list it explicitly numbered, the list has a numerology to it based on the sequence of the lines that the items are listed upon. 
 
-`["Cheshire Cat", "Puss in Boots", "Garfield"]`
+Just like the items in our notepad lists, elements in an array are associated with a number that represents their order. In programming, this number is called an **index**. While humans typically start their lists at "1.", arrays begin their indexes at `0` (zero). So, the first item in array will always be "at index `0`". If we have an array of famous (fictional) cats: 
 
-The Cheshire Cat has an index of 0, Puss has an index of 1 and Garfield has an index of 2. 
+```ruby
+famous_cats = ["Cheshire Cat", "Puss in Boots", "Garfield"]
+```
 
-To retrieve any of these items, we can type the name of the array, followed by the index number of that item, encloesd in brackets, `[]`. 
+The `"Cheshire Cat"` is at index `0` in the array, `"Puss"` is  a index `1`, and `"Garfield"` is at index `2`. Indexes will always be *one less* than the **count**.
 
+To access one of these items in the `famous_cats` array, we can type the name of the array immediately followed by the relevant index number wrapped in square brackets (`[]`). 
 
 ```ruby
 famous_cats =  ["Cheshire Cat", "Puss in Boots", "Garfield"]
@@ -201,16 +224,19 @@ famous_cats[20]
 
 ```
 
-**Bonus: Finding an element's index**
+##### Advanced: Finding An Element's Index With `.index()`
 
-To discover the index number of an element within an array, we use the `.index` method. Calling `.index` on an array, and giving it an argument of the element whose index you want to learn, will return the index number. 
+To discover the index number of an element within an array, we can use the `.index()` method. Calling `.index()` on an array with an argument inside the parentheses will return the *first* index number of an element matching that argument. If no elements match the argument, then this method will return `nil`.
 
 ```ruby
-famous_cats =  ["Cheshire Cat", "Puss in Boots", "Garfield"]
+famous_cats = ["Cheshire Cat", "Puss in Boots", "Garfield"]
 
 famous_cats.index("Puss in Boots")
 #  └── 1
+
+famous_cats.index("Maru")
+#  └── nil
 ```
 
-This is not an operation you will preform very often. Arrays are used to store data and usually you will use the index number of an item to access it, not the other way around. 
+This is not an operation you will perform very often. Arrays are used to store data and usually you will use the index number of an item to access it, not the other way around. 
 
