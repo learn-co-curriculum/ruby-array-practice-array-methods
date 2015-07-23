@@ -25,9 +25,9 @@ etc...
 
 Then, I could write a program that passes around these variables *one at a time*. This seems messy though. I could easily forget about a student, for example. Or need to create a new student and then have to hunt through my program for every place I ever passed around all of these individual variables. 
 
-If this were real life, Professor Snape would probably just write down all the students in list form and hand that list to Dumbledore. Well, in Ruby, we can do the same thing using an array.
+If this was real life, Professor Snape would probably just write down all the students in list form and hand that list to Dumbledore. Well, in Ruby, we can do the same thing using an array.
 
-An array is like a list in but in code form. It is a way for your program to store pieces of data as a *collection*. Arrays can contain any data types in any combination––strings, integers, other arrays, hashes, etc. 
+An array is like a list but in code form. It is a way for your program to store pieces of data as a *collection*. Arrays can contain any data types in any combination––strings, integers, other arrays, hashes, etc. 
 
 Arrays are declared by listing variable names or literals separated by commas (`,`) and wrapped in square brackets `[``]`. To save our four student from above into an array, we write that in our code like this:
 
@@ -52,7 +52,7 @@ my_array = Array.new
 #  └── []
 ```
 
-**Advanced:** *A class is like a template for creating objects in Ruby. There is an array class that every array you create inherits from, thus making all arrays capable of certain shared behaviors/responsive to certain methods. Don't worry about understanding classes yet, we'll be learning much more about them later.*
+**Advanced:** *A class is like a template for creating objects in Ruby. There is an array class from which every array you create is inherited, making all arrays capable of certain shared behaviors/responsive to certain methods. Don't worry about understanding classes yet, we'll be learning much more about them later.*
 
 To make an array that isn't empty, you can separate each item, known as an element, by a `,` ("comma") and wrap all the elements inside `[``]` ("square brackets").
 
