@@ -157,7 +157,7 @@ There are a number of other methods available for manipulating arrays. You can l
 
 #### The `.sort` Method
 
-This method rearranges the contents of the array by, well, sorting them. For strings, this means alphabetically, for numerical values, this means 
+This method rearranges the contents of the array by, well, sorting them. For strings, this means alphabetically, for numerical values, this means from smallest number to highest number. 
 
 **Advanced:** *The* `.sort` *method works by implicitly comparing elements with the "spaceship" operator* `<=>` *(because it looks like a flying saucer, swoosh!) and moving them accordingly.*
 
