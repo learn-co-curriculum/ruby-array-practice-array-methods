@@ -195,7 +195,7 @@ famous_cats.include?("Maru")
 
 ## Retrieving Items from Array
 
-When you write out a list on a notepad, you typically write each item on its own line. Whether or not the list it explicitly numbered, the list has a numerology to it based on the sequence of the lines that the items are listed upon. 
+When you write out a list on a notepad, you typically write each item on its own line. Whether or not the list is explicitly numbered, the list has a numerology to it based on the sequence of the lines that the items are listed upon. 
 
 Just like the items in our notepad lists, elements in an array are associated with a number that represents their order. In programming, this number is called an **index**. While humans typically start their lists at "1.", arrays begin their indexes at `0` (zero). So, the first item in array will always be "at index `0`". If we have an array of famous (fictional) cats: 
 
