@@ -142,7 +142,7 @@ Calling `.shift` on an array will remove the *first* item from the *front* of th
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
-lil_bub = famout_cats.shift
+lil_bub = famous_cats.shift
 
 puts famous_cats.inspect
   => ["grumpy cat", "Maru"]
@@ -164,7 +164,7 @@ This method rearranges the contents of the array by, well, sorting them. For str
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 
-famout_cats.sort
+famous_cats.sort
   => ["grumpy cat", "lil' bub", "Maru"]
 ```
 
