@@ -52,7 +52,15 @@ my_array = Array.new
 #  └── []
 ```
 
-**Advanced:** *A class is like a template for creating objects in Ruby. There is an array class from which every array you create is inherited, making all arrays capable of certain shared behaviors/responsive to certain methods. Don't worry about understanding classes yet, we'll be learning much more about them later.*
+**Advanced:** *A class is like a template, or blueprint, for creating objects in Ruby. An "object" is simply a bundle of information and behaviors. For example, a string is an object, because it contains information (i.e. the text inside the `" "`) and because it has behaviors––it can do things/have things done to it. For example: 
+
+```ruby
+"hi".reverse
+   => "ih"
+```
+There is an Array class that serves as the blueprint for every array that you will make. This means that all arrays are capable of certain shared behaviors and are responsive to certain methods. 
+
+To create a new array object from the Array class, you can call `.new` on `Array`––the name of the class. This creates a brand new, empty array. Don't worry about understanding objects and classes, or the `.new` method, just yet. They are all part of something called Object Oriented Programming, which is a big topic. We'll be building up to it through this and the next few units.*
 
 To make an array that isn't empty, you can separate each item, known as an element, by a `,` ("comma") and wrap all the elements inside `[``]` ("square brackets").
 
