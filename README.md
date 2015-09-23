@@ -1,12 +1,19 @@
-# Array Overview
+# Introduction to Arrays
+
+## Overview
+
+This lesson will give a deeper dive on how to create, manipulate, and retrieve data from arrays.
 
 ## Objectives
 
-1. Understand the purpose of arrays.
+1. Describe how arrays are useful in storing multiple pieces of information.
 2. Create and populate an array.
-3. Manipulate an array.
-4. Reference the Ruby documentation on arrays.
-4. Retrieve data from an array.
+3. Add items to an array using different methods.
+4. Remove items from an array using different methods. 
+5. Operate on an array using the sort, reverse, and include methods. 
+6. Identify elements in an array based on their index number. 
+7. Retrieve items from an array. 
+8. Reference the Ruby documentation on arrays.
 
 ## What is an Array?
 
