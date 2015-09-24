@@ -17,9 +17,7 @@ This lesson will give a deeper dive on how to create, manipulate, and retrieve d
 
 ## Video
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/W0Q_AyfolRw" frameborder="0"
-allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v=W0Q_AyfolRw">Intro to Ruby Arrays</a></p> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W0Q_AyfolRw" frameborder="0" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v=W0Q_AyfolRw">Intro to Ruby Arrays</a></p> 
 
 
 ## What is an Array?
