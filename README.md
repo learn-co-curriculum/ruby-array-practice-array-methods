@@ -15,6 +15,13 @@ This lesson will give a deeper dive on how to create, manipulate, and retrieve d
 7. Retrieve items from an array. 
 8. Reference the Ruby documentation on arrays.
 
+## Video
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/W0Q_AyfolRw" frameborder="0"
+allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v=W0Q_AyfolRw">Intro to Ruby Arrays</a></p> 
+
+
 ## What is an Array?
 
 So far, we've used variables to store information. For example, I could create a variable called `my_name` and set it equal to my name: `my_name = "Severus Snape"`. However, variables only allow us to store one piece of information at a time. 
