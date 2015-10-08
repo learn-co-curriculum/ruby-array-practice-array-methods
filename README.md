@@ -91,7 +91,7 @@ It is possible to create an array that contains disparate data types, but that i
 
 ## Manipulating Arrays
 
-If an array is a storage container for a list of data, then we can imaging adding and removing individual items from it. There are several ways to accomplish either. 
+If an array is a storage container for a list of data, then we can imagine adding and removing individual items from it. There are several ways to accomplish either. 
 
 ### Adding Items to an Array
 
