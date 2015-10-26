@@ -1,4 +1,4 @@
-# Introduction to Arrays
+# Basic Arrays: Creating, Retrieving, Updating and Deleting
 
 ## Overview
 
