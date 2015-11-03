@@ -67,7 +67,7 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 famous_cats << "nala cat"
 
 puts famous_cats.inspect
-  => ["lil' bub", "grumpy cat", "Maru", "nala cat"]
+# > ["lil' bub", "grumpy cat", "Maru", "nala cat"]
 
 ```
 
@@ -85,7 +85,7 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 famous_cats.push("nala cat")
 
 puts famous_cats.inspect
-  => ["lil' bub", "grumpy cat", "Maru", "nala cat"]
+# > ["lil' bub", "grumpy cat", "Maru", "nala cat"]
 
 ```
 
@@ -99,7 +99,7 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 famous_cats.unshift("nala cat")
 
 puts famous_cats.inspect
-  => ["nala cat", "lil' bub", "grumpy cat", "Maru"]
+# > ["nala cat", "lil' bub", "grumpy cat", "Maru"]
 
 ```
 
@@ -114,9 +114,9 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 maru_cat = famous_cats.pop
 
 puts famous_cats.inspect 
- => ["lil' bub", "grumpy cat"]
+# > ["lil' bub", "grumpy cat"]
 puts maru_cat
- => Maru
+# > Maru
 ```
 
 ### The `.shift` Method
@@ -128,9 +128,9 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 lil_bub = famous_cats.shift
 
 puts famous_cats.inspect
-  => ["grumpy cat", "Maru"]
+# > ["grumpy cat", "Maru"]
 puts lil_bub
-  => lil' bub
+# > lil' bub
 ```
 
 ## Retrieving Items from Array
