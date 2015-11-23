@@ -133,6 +133,8 @@ puts lil_bub
 # > lil' bub
 ```
 
+*Note:* If you want to remove items that are not at the beginning or end of an array, use the [Ruby documentation](http://docs.ruby-lang.org/en/2.0.0/Array.html#method-i-delete_at) to figure out how. 
+
 ## Retrieving Items from Array
 
 When you write out a list on a notepad, you typically write each item on its own line. Whether or not the list is explicitly numbered, the list has a numerology to it based on the sequence of the lines that the items are listed upon. 
