@@ -171,10 +171,10 @@ famous_cats[-1]
 
 #### Bonus: Using Methods
 
-We can also use the `#first` method on an arry to access the first element:
+We can also use the `#first` method on an array to access the first element:
 
 ```ruby
-famous_cats.fist
+famous_cats.first
 # └── "Cheshire Cat"
 ```
 
