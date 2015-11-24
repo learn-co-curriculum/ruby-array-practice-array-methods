@@ -162,6 +162,29 @@ famous_cats[2]
 #  └── "Garfield"
 ```
 
+We can also access array elements by using negative index numbers. The last item of an array is considered to be stored at an index of `-1`. Let's give it a shot:
+
+```ruby
+famous_cats[-1]
+# └── "Garfield"
+```
+
+#### Bonus: Using Methods
+
+We can also use the `#first` method on an arry to access the first element:
+
+```ruby
+famous_cats.fist
+# └── "Cheshire Cat"
+```
+
+We can use the `#last` method to access the last element:
+
+```ruby
+famous_cats.last
+# └── "Garfield
+```
+
 #### A Note on Index Numbers
 
 What happens when we try to access the element stored in an index that doesn't exist? In other words, let's say we have our `famous_cats` array that contains three elements. That means that our array contains an element at indexes `0`, `1`, and `2`. What happens if we try to access an element at index `3`? An index element that doesn't exist. 
