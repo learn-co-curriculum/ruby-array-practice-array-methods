@@ -214,3 +214,5 @@ famous_cats.index("Maru")
 
 This is not an operation you will perform very often. Arrays are used to store data and usually you will use the index number of an item to access it, not the other way around. 
 
+
+<a href='https://learn.co/lessons/array-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
