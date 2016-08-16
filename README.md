@@ -139,7 +139,7 @@ puts lil_bub
 
 When you write out a list on a notepad, you typically write each item on its own line. Whether or not the list is explicitly numbered, the list has a numerology to it based on the sequence of the lines that the items are listed upon. 
 
-Just like the items in our notepad lists, elements in an array are associated with a number that represents their order. In programming, this number is called an **index**. While humans typically start their lists at "1.", arrays begin their indexes at `0` (zero). So, the first item in array will always be "at index `0`". If we have an array of famous (fictional) cats: 
+Just like the items in our notepad lists, elements in an array are associated with a number that represents their order. In programming, this number is called an **index**. While humans typically start their lists at "1", arrays begin their indexes at `0` (zero). So, the first item in an array will always be "at index `0`". If we have an array of famous (fictional) cats: 
 
 ```ruby
 famous_cats = ["Cheshire Cat", "Puss in Boots", "Garfield"]
@@ -216,3 +216,5 @@ This is not an operation you will perform very often. Arrays are used to store d
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/array-readme' title='Basic Arrays: Creating, Retrieving, Updating and Deleting'>Basic Arrays: Creating, Retrieving, Updating and Deleting</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/array-readme'>Using Arrays</a> on Learn.co and start learning to code for free.</p>
