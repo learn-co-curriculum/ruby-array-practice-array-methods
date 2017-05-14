@@ -77,7 +77,7 @@ The shovel method (`<<`) is the preferred syntax for adding elements to an array
 
 ### The `.push` Method
 
-Calling `.push` on an array with an argument of the element you wish to add to that array, will also add that element to the *end* of the array. It has the same effect as the shovel method explained above:
+Calling `.push` on an array with an argument will add that element to the *end* of the array. It has the same effect as the shovel method explained above:
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
