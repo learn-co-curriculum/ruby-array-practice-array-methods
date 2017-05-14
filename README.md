@@ -55,7 +55,7 @@ It is possible to create an array that contains disparate data types. In other w
 
 ## Adding Items to an Array
 
-If an array is a storage container for a list of data, then we can imagine adding and removing individual items from it. Let's take a look at how we can add elements to an array. 
+If an array is a storage container for a list of data, then we can imagine adding and removing individual items. Let's take a look at how we can add elements to an array. 
 
 ### Shovel Method
 
