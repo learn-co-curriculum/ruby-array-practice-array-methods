@@ -215,6 +215,6 @@ famous_cats.index("Maru")
 This is not an operation you will perform very often. Arrays are used to store data and usually you will use the index number of an item to access it, not the other way around. 
 
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/array-readme' title='Basic Arrays: Creating, Retrieving, Updating and Deleting'>Basic Arrays: Creating, Retrieving, Updating and Deleting</a> on Learn.co and start learning to code for free.</p>
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/array-readme'>Using Arrays</a> on Learn.co and start learning to code for free.</p>
+
+
