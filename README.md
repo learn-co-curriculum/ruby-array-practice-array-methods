@@ -16,8 +16,10 @@ This lesson will give a deeper dive on how to create, manipulate, and retrieve d
 
 ## Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W0Q_AyfolRw" frameborder="0" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v=W0Q_AyfolRw">Intro to Ruby Arrays</a></p> 
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/W0Q_AyfolRw" frameborder="0" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v=W0Q_AyfolRw">Intro to Ruby Arrays</a></p>  -->
 
+<iframe src="https://player.vimeo.com/video/593486470?h=96997dce3d" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/593486470">SE - Flex - flex - Phase 3 - intro-ruby-arrays - Central - AM</a>
 
 ## Creating an Array
 
